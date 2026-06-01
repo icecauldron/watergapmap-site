@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methodology | WaterGapMap</title>
+  <meta name="description" content="WaterGapMap methodology and limitations for informational water-data review support.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>WaterGapMap</span></a>
+      <div class="nav-links">
+        <a href="features.html">Features</a>
+        <a href="methodology.html" aria-current="page">Methodology</a>
+        <a href="data-sources.html">Data Sources</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="button" href="https://watergapmap-mvp.onrender.com/">Launch Demo Map</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <div class="section">
+        <p class="eyebrow">Review logic</p>
+        <h1>Methodology</h1>
+        <p class="lede">WaterGapMap combines public records and rule-based indicators to help identify records that may benefit from human review.</p>
+      </div>
+    </section>
+    <section class="section content">
+      <h2>Informational screening</h2>
+      <p>The tool is designed for triage. It highlights possible data gaps, use-record patterns, and contextual attributes. It does not determine legality, compliance, abandonment, injury, validity, priority administration, or ownership.</p>
+
+      <h2>General process</h2>
+      <ol>
+        <li>Gather available public structure, diversion, rights, and governance records.</li>
+        <li>Normalize identifiers where feasible, especially structure identifiers used across public datasets.</li>
+        <li>Compute simple review signals, such as reported-use recency, data availability, and source-record differences.</li>
+        <li>Display records with plain-language reasons so reviewers can decide whether additional verification is warranted.</li>
+      </ol>
+
+      <h2>Human review required</h2>
+      <p>Any flagged record should be checked against authoritative records, source agency systems, local facts, field conditions, historical context, and qualified professional judgment. Public datasets can contain missing values, reporting lag, identifier mismatch, geometry error, duplicate records, and changes not reflected in the reviewed snapshot.</p>
+
+      <div class="callout">
+        <strong>No determination:</strong> A priority category is a review cue only. It is not evidence by itself that any person, structure, ditch, reservoir, owner, operator, or water right is lawful, unlawful, compliant, noncompliant, active, abandoned, owned, or unowned.
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>WaterGapMap</strong><p class="small">Screening signals for informational review support.</p></div>
+      <div class="footer-links"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="https://watergapmap-mvp.onrender.com/">Demo Map</a></div>
+    </div>
+  </footer>
+</body>
+</html>
