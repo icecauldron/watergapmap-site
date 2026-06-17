@@ -27,7 +27,7 @@
       <div class="hero-inner hero-grid">
         <div>
           <p class="eyebrow">Civic water data review</p>
-          <h1>WaterGapMap</h1>
+          <h1 class="wordmark hero-wordmark">WaterGapMap</h1>
           <p class="lede">A public-facing, map-based review-support tool for exploring water-use records, structure activity signals, and records that may warrant closer human review.</p>
           <div class="actions">
             <a class="button" href="https://watergapmap-mvp.onrender.com/">Launch Demo Map</a>
@@ -35,16 +35,24 @@
           </div>
           <p class="notice">WaterGapMap is informational only. It does not determine legality, regulatory compliance, abandonment, injury, validity of a right, or water-right ownership.</p>
         </div>
-        <div class="map-panel" aria-label="Stylized preview of map review signals">
-          <div class="map-toolbar"><span>Colorado structures</span><span>Review signals</span></div>
-          <div class="map-visual">
-            <div class="map-card">
-              <div class="status-row"><span><span class="dot high"></span>Higher review priority</span><strong>Human review</strong></div>
-              <div class="status-row"><span><span class="dot medium"></span>Record discrepancy</span><strong>Context needed</strong></div>
-              <div class="status-row"><span><span class="dot low"></span>Lower priority signal</span><strong>Monitor</strong></div>
+        <aside class="mvp-panel" aria-label="WaterGapMap MVP scope">
+          <div class="panel-header">
+            <img class="hero-logo" src="assets/wgm_logo.png" alt="" aria-hidden="true">
+            <div>
+              <p class="eyebrow">Current MVP scope</p>
+              <h2>Colorado water-data screening</h2>
             </div>
           </div>
-        </div>
+          <div class="metric">
+            <strong>24,939</strong>
+            <span>Colorado structures indexed</span>
+          </div>
+          <div class="scope-list">
+            <div><span class="dot medium"></span><strong>Open demo map</strong><p>Explore mapped records and review signals in the browser.</p></div>
+            <div><span class="dot low"></span><strong>Human review only</strong><p>Signals organize follow-up work; they are not legal, compliance, or ownership determinations.</p></div>
+          </div>
+          <a class="button panel-button" href="https://watergapmap-mvp.onrender.com/">Open Demo Map</a>
+        </aside>
       </div>
     </section>
 
