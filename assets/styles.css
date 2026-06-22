@@ -114,7 +114,8 @@ a:hover {
   color: var(--water-dark);
 }
 
-.nav-links .button {
+.nav-links a.button,
+.nav-links a.button:visited {
   min-height: 44px;
   padding: 10px 16px;
   border: 1px solid transparent;
@@ -125,7 +126,10 @@ a:hover {
   box-shadow: 0 8px 18px rgba(8, 55, 68, 0.22);
 }
 
-.nav-links .button:hover {
+.nav-links a.button:hover,
+.nav-links a.button:focus,
+.nav-links a.button:focus-visible,
+.nav-links a.button:active {
   background: var(--water);
   color: #ffffff;
 }
