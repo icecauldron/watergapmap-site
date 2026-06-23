@@ -184,15 +184,6 @@ a:hover {
   align-items: center;
 }
 
-.eyebrow {
-  margin: 0 0 14px;
-  color: var(--water);
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
 h1,
 h2,
 h3 {
@@ -263,10 +254,6 @@ p {
   display: flex;
   align-items: center;
   gap: 14px;
-}
-
-.panel-header .eyebrow {
-  margin-bottom: 6px;
 }
 
 .panel-header h2 {
