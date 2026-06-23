@@ -569,21 +569,154 @@ p {
   }
 }
 
-@media (max-width: 520px) {
-  .nav-links a {
-    padding-left: 0;
-    padding-right: 10px;
+@media (max-width: 700px) {
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(191, 230, 223, 0.24), transparent 24rem),
+      linear-gradient(180deg, #fbfdfc 0, #ffffff 20rem);
   }
 
-  h1 {
-    font-size: 2.35rem;
+  .nav {
+    padding: 12px 18px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    min-height: 40px;
+    padding: 9px 10px;
+  }
+
+  .nav-links a.button,
+  .nav-links a.button:visited {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .hero-inner,
+  .section {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .hero-grid {
+    gap: 26px;
+    align-items: start;
+  }
+
+  h1,
+  .hero-wordmark {
+    font-size: clamp(2.35rem, 13vw, 3.7rem);
+    line-height: 1;
+  }
+
+  .page-title .section,
+  .contact-hero .section {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .page-title h1 {
+    font-size: clamp(2rem, 11vw, 2.85rem);
+  }
+
+  h2 {
+    font-size: clamp(1.55rem, 8vw, 2.15rem);
+  }
+
+  .lede {
+    font-size: 1.05rem;
+  }
+
+  .actions {
+    gap: 10px;
+    margin-top: 22px;
   }
 
   .actions .button {
     width: 100%;
+    min-height: 48px;
+  }
+
+  .notice,
+  .mvp-panel,
+  .card,
+  .callout {
+    padding: 18px;
+  }
+
+  .metric {
+    margin-top: 20px;
+    padding: 18px;
+  }
+
+  .metric strong {
+    font-size: clamp(2.6rem, 14vw, 3.8rem);
+  }
+
+  .grid,
+  .grid.two {
+    gap: 16px;
+    margin-top: 22px;
+  }
+
+  .content h2 {
+    margin-top: 30px;
+  }
+
+  .contact-section {
+    gap: 32px;
+  }
+
+  .feedback-form-wrap {
+    width: 100%;
+  }
+
+  .feedback-form iframe {
+    min-height: 660px;
+  }
+}
+
+@media (max-width: 520px) {
+  .nav-links a {
+    flex: 1 1 calc(50% - 8px);
+    text-align: center;
+  }
+
+  .nav-links a.button,
+  .nav-links a.button:visited {
+    flex-basis: 100%;
+  }
+
+  .hero-inner,
+  .section,
+  .footer-inner {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .panel-header {
     align-items: flex-start;
+  }
+
+  .hero-logo {
+    width: 48px;
+    height: 72px;
+  }
+
+  .feedback-form iframe {
+    min-height: 620px;
   }
 }
