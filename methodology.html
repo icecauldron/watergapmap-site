@@ -24,12 +24,22 @@
     <section class="page-title">
       <div class="section">
         <h1>Methodology</h1>
-        <p class="lede">WaterGapMap combines public records and rule-based indicators to help identify records that may benefit from human review.</p>
+        <p class="lede">WaterGapMap combines public records and rule-based indicators to help identify records that may benefit from human review. 
+The methodology is designed to support prioritization and investigation, not to produce compliance determinations.</p>
       </div>
     </section>
     <section class="section content">
       <h2>Informational screening</h2>
-      <p>The tool is designed for triage. It highlights possible data gaps, use-record patterns, and contextual attributes. It does not determine legality, compliance, abandonment, injury, validity, priority administration, or ownership.</p>
+      <p>The tool is designed for triage. It highlights possible data gaps, use-record patterns, and contextual attributes. 
+        <ul>
+  <li>Structure information</li>
+  <li>Diversion reporting records</li>
+  <li>>Water-right information</li>
+  <li>Net amount information</li>
+  <li>Plan-related information</li>
+  <li>Diversion activity history</li>
+</ul>
+ <p>It does not determine legality, compliance, abandonment, injury, validity, priority administration, or ownership.</p>
 
       <h2>General process</h2>
       <ol>
@@ -38,7 +48,54 @@
         <li>Compute simple review signals, such as reported-use recency, data availability, and source-record differences.</li>
         <li>Display records with plain-language reasons so reviewers can decide whether additional verification is warranted.</li>
       </ol>
+<h2>Activity Classification</h2>
 
+<p>Activity status is based on the most recent diversion reporting year available.</p>
+
+<h3>Active</h3>
+<p>Diversion reporting within the past 10 years.</p>
+
+<h3>Possibly Inactive</h3>
+<p>Most recent diversion reporting between 11 and 20 years ago.</p>
+
+<h3>Inactive</h3>
+<p>Most recent diversion reporting more than 20 years ago.</p>
+
+<h3>No Data</h3>
+<p>No usable diversion reporting information available.</p>
+
+<h2>Review Priority Logic</h2>
+
+<h3>High Priority</h3>
+<p>Assigned when recent diversion activity exists and a review trigger is identified.</p>
+
+<p>Examples include:</p>
+<ul>
+  <li>Recent diversion reporting with no matching rights record identified.</li>
+  <li>Recent diversion reporting with no matching net amount identified.</li>
+</ul>
+
+<h3>Medium Priority</h3>
+<p>Assigned when similar review triggers exist but diversion activity appears historical or less recent.</p>
+
+<p>Examples include:</p>
+<ul>
+  <li>Historical diversion reporting with no matching rights record identified.</li>
+  <li>Historical diversion reporting with no matching net amount identified.</li>
+</ul>
+
+<h3>Low Priority</h3>
+<p>Assigned when no stronger review signal is identified by current screening logic.</p>
+
+<p>Examples include:</p>
+<ul>
+  <li>Rights and net amount information identified.</li>
+  <li>No diversion records available.</li>
+</ul>
+
+<h3>Unknown</h3>
+<p>Assigned when available information is insufficient to support classification.</p>
+      
       <h2>Human review required</h2>
       <p>Any flagged record should be checked against authoritative records, source agency systems, local facts, field conditions, historical context, and qualified professional judgment. Public datasets can contain missing values, reporting lag, identifier mismatch, geometry error, duplicate records, and changes not reflected in the reviewed snapshot.</p>
 
