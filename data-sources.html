@@ -29,23 +29,42 @@
       </div>
     </section>
     <section class="section content">
-      <h2>Source categories</h2>
+      <h2>Colorado Decision Support Systems / Colorado Division of Water Resources</h2>
+      <p>WaterGapMap uses public Colorado water-data records made available through Colorado Decision Support Systems (CDSS) and the Colorado Division of Water Resources (DWR). The primary public access point for these records is the <a href="https://dwr.state.co.us/Tools">CDSS Data &amp; Tools portal</a>.</p>
+
+      <h2>CDSS Structures data</h2>
+      <p>WaterGapMap uses CDSS administrative structure records for structure identifiers and map context, including WDID, structure name, structure type, water division, water district, county, water source, longitude, and latitude.</p>
+      <p>CDSS describes administrative structures as records used for diverting, storing, releasing, measuring, or managing water. CDSS also notes that structures are associated with a specific water source. Source: <a href="https://dwr.state.co.us/Tools/Structures">CDSS Structures tool</a>.</p>
+
+      <h2>CDSS Diversion Records</h2>
+      <p>WaterGapMap uses diversion records associated with structures to summarize reported activity, including latest reported year, 10-year total acre-feet, and all-years total acre-feet. CDSS notes that diversion records are associated with structures. Source: <a href="https://dwr.state.co.us/Tools/Structures">CDSS Structures tool</a>.</p>
+
+      <h2>CDSS Water Rights / Net Amounts</h2>
+      <p>WaterGapMap uses public water-right and net-amount data to identify whether a matching water-right record and a nonzero net decreed amount were identified in the current dataset. Source: <a href="https://dwr.state.co.us/Tools/WaterRights">CDSS Water Rights page</a>.</p>
+
+      <h2>Plan / augmentation context</h2>
+      <p>WaterGapMap uses plan-structure relationships where available to flag whether a structure appears plan-governed in the current dataset. This is administrative context for review and does not determine legal coverage, compliance, or the effect of any plan.</p>
+
+      <h2>Derived WaterGapMap fields</h2>
+      <p>Some fields shown in WaterGapMap are derived by WaterGapMap and are not official CDSS fields. These include:</p>
       <ul>
-        <li>Public structure records, including identifiers, names, types, locations, and administrative context.</li>
-        <li>Reported diversion or use records where available.</li>
-        <li>Public water-right and decree-related records where available.</li>
-        <li>Plan, governance, or administrative-context records where available.</li>
-        <li>Public map geometry or coordinate fields used to display records geographically.</li>
+        <li>Review priority</li>
+        <li>Activity status</li>
+        <li>Why flagged</li>
+        <li>10-year summaries</li>
+        <li>Current map filters</li>
       </ul>
+      <p>WaterGapMap derives these fields from public records for screening and review. For example, a review note may say that no matching water-right record was identified in the current dataset, rather than making a legal conclusion about whether a right exists.</p>
 
       <h2>Data limitations</h2>
-      <p>Public records may be incomplete, stale, corrected after extraction, spatially imprecise, or inconsistent across systems. A missing record in WaterGapMap does not mean a record does not exist elsewhere. A visible discrepancy does not establish a legal or compliance issue.</p>
+      <p>Data sources accessed and processed during the 2026 WaterGapMap Colorado MVP build.</p>
+      <p>Public records may be incomplete, stale, corrected after extraction, spatially imprecise, or inconsistent across systems. A missing record in WaterGapMap does not mean a record does not exist elsewhere.</p>
 
       <h2>Review practice</h2>
       <p>Reviewers should confirm important questions directly with authoritative source systems, agency records, court records, title documents, engineering analysis, field inspection, and qualified legal or technical professionals.</p>
 
       <div class="callout">
-        <strong>Use condition:</strong> Data shown through WaterGapMap is provided for informational review support and should not be relied upon as a definitive record of legality, compliance, ownership, or water-right status.
+        <strong>Use condition:</strong> WaterGapMap is an informational screening tool. It does not determine legality, compliance, abandonment, ownership, or the existence or nonexistence of a valid water right.
       </div>
     </section>
   </main>
