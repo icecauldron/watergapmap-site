@@ -254,6 +254,10 @@ p {
   font-size: 1.2rem;
 }
 
+.hero .lede {
+  margin-top: 0;
+}
+
 .actions {
   display: flex;
   align-items: center;
