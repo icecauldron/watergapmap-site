@@ -99,6 +99,35 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #ffffff;
+  color: var(--water-dark);
+  cursor: pointer;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  border-color: var(--water);
+  background: var(--surface-blue);
+  outline: none;
+}
+
+.nav-toggle-bar {
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
 .nav-links a {
   color: var(--ink);
   font-size: 0.94rem;
@@ -569,6 +598,52 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 18px;
+    left: 18px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    width: auto;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: var(--shadow);
+  }
+
+  .nav.nav-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+  }
+
+  .nav-links a.button,
+  .nav-links a.button:visited {
+    justify-content: center;
+    min-height: 46px;
+    margin-top: 4px;
+  }
+}
+
 @media (max-width: 700px) {
   body {
     background:
@@ -587,22 +662,6 @@ p {
   .brand-mark {
     width: 30px;
     height: 30px;
-  }
-
-  .nav-links {
-    width: 100%;
-    gap: 8px;
-  }
-
-  .nav-links a {
-    min-height: 40px;
-    padding: 9px 10px;
-  }
-
-  .nav-links a.button,
-  .nav-links a.button:visited {
-    width: 100%;
-    min-height: 46px;
   }
 
   .hero-inner,
@@ -690,16 +749,6 @@ p {
 }
 
 @media (max-width: 520px) {
-  .nav-links a {
-    flex: 1 1 calc(50% - 8px);
-    text-align: center;
-  }
-
-  .nav-links a.button,
-  .nav-links a.button:visited {
-    flex-basis: 100%;
-  }
-
   .hero-inner,
   .section,
   .footer-inner {
