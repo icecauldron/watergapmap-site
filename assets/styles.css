@@ -213,8 +213,8 @@ a:hover {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
-  gap: 36px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
+  gap: 42px;
   align-items: start;
 }
 
@@ -238,9 +238,12 @@ h1 {
 }
 
 .hero-headline {
-  max-width: 680px;
-  font-size: clamp(2.45rem, 4.4vw, 3.2rem);
-  line-height: 1.05;
+  max-width: 760px;
+  font-size: clamp(2.2rem, 3.6vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--water-dark);
+  text-shadow: 0 10px 30px rgba(38, 111, 122, 0.12);
 }
 
 h2 {
@@ -270,11 +273,11 @@ p {
 }
 
 .hero-copy {
-  padding-top: 4px;
+  padding-top: 2px;
 }
 
 .hero-summary {
-  max-width: 650px;
+  max-width: 690px;
   margin-top: 18px;
   color: var(--muted);
   font-size: 1.18rem;
@@ -726,8 +729,10 @@ p {
   }
 
   .hero-headline {
-    font-size: clamp(2rem, 9vw, 2.55rem);
-    line-height: 1.08;
+    max-width: 100%;
+    font-size: clamp(2rem, 8vw, 2.45rem);
+    line-height: 1.04;
+    letter-spacing: -0.018em;
   }
 
   .hero-summary {
